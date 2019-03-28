@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<h1 id="title">Survey Form</h1>
+<div class="container jumbotron" id="main">
+  <p  id="description">Tell  us about your cricket habits:</p>
+  <form id="survey-form">
+  <div class="row">
+    <div class="col-lg-6 label">
+      <label  for="name" id="name-label" >*Name : </label>
+    </div>
+    <div class="col-lg-6 input-div">
+      <input id="name" class="input" type="text" name="name" placeholder="Enter Your Name..." required>
+    </div>
+  </div>
+    <div class="row">
+    <div class="col-lg-6 label">
+      <label for="email" id="email-label">*Email :</label>
+    </div>
+    <div class="col-lg-6 input-div">
+      <input id="email" class="input" type="email" name="email" placeholder="Enter your email...." required>
+    </div>
+  </div>
+    <div class="row">
+    <div class="col-lg-6 label">
+      <label for="age"  id="number-label">*Age : </label>
+    </div>
+    <div class="col-lg-6 input-div">
+      <input id="number" class="input" type="number" name="age" min="1" max="112" placeholder="Age" required>
+    </div>
+  </div>
+    <div class="row">
+    <div class="col-lg-6 label">
+      <label for="habit">Tell your current cricketing knowledge : </label>
+    </div>
+    <div class="col-lg-6 input-div">
+      <select id="dropdown">
+        <option disabled>Select an option</option>
+        <option>Beginner</option>
+        <option>Medium</option>
+        <option>Supreme</option>  
+      </select>
+    </div>
+  </div>
+    <div class="row">
+      <div class="col-lg-6 label">
+      <label for="reading" >  How likely are you to recommend cricket as a sport to others :</label>
+      </div>
+      <div class="col-lg-6 input-div">
+        <input type="radio" value="1" name="recommend"> Highly<br>
+        <input type="radio" value="2" name="recommend"> Maybe<br>
+        <input type="radio" value="3" name="recommend"> Not at all
+         </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 label">
+        <label>What do you like most about cricket ?</label>
+      </div>
+      <div class="col-lg-6 input-div">
+        <select>
+          <option>Batting</option>
+          <option>Bowling</option>
+          <option>Fielding</option>
+          </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 label">
+        <label>Your favorite Players :</label>
+      </div>
+      <div class="col-lg-6 input-div">
+        <input value="dhoni" type="checkbox" checked> MS Dhoni<br>
+        <input value="sachin" type="checkbox"> Sachin Tendulkar<br>
+        <input value="kohli" type="checkbox"> Virat Kohli<br>
+        <input value="abd" type="checkbox"> A B Devilliers<br>
+        <input value="lara" type="checkbox"> Brian Lara<br>
+        <input value="bradman" type="checkbox"> Sir Don Bradman<br>
+        <input value="dravid" type="checkbox"> Rahul Dravid<br>
+        <input value="other" type="checkbox"> Other<br>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 label">
+        <label for="textarea">
+          Any comments or suggestions :
+        </label>
+      </div>
+      <div class="col-lg-6 input-div">
+        <textarea rows="4" cols="35" placeholder="Enter you comments here....."></textarea>
+      </div>
+    </div>
+    <div class="col-lg-12 button">
+    <button  id="submit" class="btn btn-primary" type="submit">Submit</button>
+    </div>
+    
+  </form>
+</div>
+
+</body>
+</html>
